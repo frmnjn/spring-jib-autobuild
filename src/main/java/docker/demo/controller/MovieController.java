@@ -19,6 +19,11 @@ public class MovieController {
         return movieRepository.findAll();
     }
 
+    @GetMapping("/welcome")
+    public String welcome(){
+        return "Hello World!";
+    }
+    
     @PostMapping
     public Movie insert(@RequestBody Movie insertedMovie){
 //        Movie a = new Movie("The Shawshank Redemption","1994","Crime");
