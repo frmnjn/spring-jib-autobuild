@@ -23,10 +23,9 @@ public class MovieController {
     public String welcome(){
         return "Hello World!";
     }
-    
+
     @PostMapping
     public Movie insert(@RequestBody Movie insertedMovie){
-//        Movie a = new Movie("The Shawshank Redemption","1994","Crime");
         Movie movie = new Movie(insertedMovie.getTitle(),insertedMovie.getYear(),insertedMovie.getGenre());
         return movieRepository.save(movie);
     }
