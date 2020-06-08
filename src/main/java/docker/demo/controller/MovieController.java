@@ -21,7 +21,7 @@ public class MovieController {
 
     @GetMapping("/welcome")
     public String welcome(){
-        return "Hello World Updated7!";
+        return "Hello World Updated4!";
     }
 
     @PostMapping
